@@ -1,0 +1,31 @@
+/* fixed, 100vh, justify-content,align-content => center */
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-weight: bold;
+}
+.main a {
+  text-decoration: none;
+  padding: 10px;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+h2 {
+  font-weight: bold;
+}
+.heading1 {
+  background-color: red;
+  height: 100vh;
+}
+.heading2 {
+  background-color: purple;
+  height: 100vh;
+}
+.heading3 {
+  background-color: yellow;
+  height: 100vh;
+}
