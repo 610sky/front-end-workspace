@@ -1,0 +1,44 @@
+.container {
+  background: linear-gradient(blue, rgb(2, 1, 65));
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.square {
+  box-sizing: border-box;
+  width: 10px;
+  height: 70px;
+  border: 2px solid;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container:hover .square {
+  animation: boxAni 0.7s linear infinite alternate;
+}
+.container:hover .square:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.container:hover .square:nth-child(6) {
+  animation-delay: 0.1s;
+}
+.container:hover .square:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.container:hover .square:nth-child(5) {
+  animation-delay: 0.2s;
+}
+.container:hover .square:nth-child(4) {
+  animation-delay: 0.3s;
+}
+@keyframes boxAni {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0.2);
+  }
+}
