@@ -31,13 +31,11 @@
       console.log(scores); // [98, 99, 76, 82]
 
       // 4)
-      scores.splice(0, 2);
-      scores.unshift(30);
+      scores.splice(0, 2, 30);
       console.log(scores); // [30, 76, 82]
 
       // 5)
-      scores.splice(1, 2);
-      scores.push(50);
+      scores.splice(1, 2, 50);
       console.log(scores); // [30, 50]
     </script>
 
@@ -48,9 +46,17 @@
       // ['팝송', '클래식', '재즈']
       // ['OST']
 
+      const music2 = music.slice(1, 4);
+      console.log(music2);
+
+      const music3 = music.slice(4);
+      console.log(music3);
+
+      /*
       const [a, b, c, d, e] = music;
       console.log(b, c, d);
       console.log(e);
+      */
     </script>
 
     <!-- Q4. 해당 배열을 오름차순(작은 숫자 ~ 큰 숫자)으로 정렬해주세요  -->
