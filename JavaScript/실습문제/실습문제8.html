@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="실습문제8.css" />
+  </head>
+  <body>
+    <div class="container">
+      <p>* 아이디 : <input id="id" type="text" placeholder="" /></p>
+      <div id="id2">
+        첫글자는 반드시 영문자로, 그리고 영문자, 숫자 포함하여 총 4~12자로
+        입력하시오.
+      </div>
+
+      <p>* 비밀번호 : <input id="password" type="password" placeholder="" /></p>
+      <div id="password2">
+        영문자, 숫자, 특수문자 포함하여 총 8~15자로 입력하시오.
+        <!-- [!-~] -->
+      </div>
+
+      <p>
+        * 비밀번호 확인 :
+        <input id="password_check" type="password" placeholder="" />
+      </p>
+      <div id="password_check2">위의 비밀번호와 일치하게 입력하시오.</div>
+
+      <p>* 이름 : <input id="names" type="text" placeholder="" /></p>
+      <div id="names2">한글로만 이루어져야되며 2글자 이상으로 입력하시오.</div>
+      <!-- [가-힣] -->
+
+      <p>* 이메일 : <input id="email" type="text" placeholder="" /></p>
+      <div id="email2">이메일 형식에 맞춰서 입력하시오.</div>
+      <!-- (+)@() -->
+
+      <p>
+        * 취미 :
+        <input id="hobby" type="text" placeholder="축구, 농구, 야구, 독서 등" />
+      </p>
+
+      <p>
+        * 거주지 :
+        <select name="addr">
+          <option value="Seoul">서울</option>
+          <option value="Jeju">제주</option>
+          <option selected></option>
+        </select>
+      </p>
+    </div>
+    <script src="실습문제8.js"></script>
+  </body>
+</html>

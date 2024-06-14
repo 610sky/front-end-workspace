@@ -1,0 +1,10 @@
+.container {
+  border: 1px solid #8d8a8a;
+  width: auto;
+  height: auto;
+  text-align: left;
+}
+.container div {
+  color: #8d8a8a;
+  margin-left: 10px;
+}
