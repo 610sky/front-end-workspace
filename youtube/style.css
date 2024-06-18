@@ -1,9 +1,23 @@
+.progress-bar-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 2px;
+}
+.progress-bar {
+  width: 0;
+  height: 100%;
+  background: #ff0000;
+}
 header {
   position: fixed;
   width: 100%;
   display: flex;
   justify-content: space-between;
   height: 60px;
+  background-color: white;
 }
 .header-start {
   display: flex;
@@ -69,6 +83,7 @@ main nav {
   display: flex;
   padding-left: 15px;
   align-items: center;
+  background-color: white;
 }
 main nav a {
   background-color: #eee;

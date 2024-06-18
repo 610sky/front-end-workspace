@@ -39,6 +39,8 @@
       const nums = [3, 7, 12, 5, 3];
       const sorting2 = nums.sort((a, b) => a - b);
       console.log(sorting2.pop());
+
+      console.log(Math.max(...nums));
     </script>
 
     <!-- Q5. 1 ~ 10 정수 중 소수(1과 자기자신)를 출력하세요
@@ -67,6 +69,18 @@
           }
         }
       }
+
+      /*
+      console.log("--- Q5 ---");
+      for (let i = 2; i <= 100; i++) {
+        for (let j = 2; j <= i; j++) {
+          if (i % j === 0) {
+            if (i !== j) break;
+            console.log(i);
+          }
+        }
+      }
+      */
     </script>
 
     <!-- Q6. 배열 안의 데이터를 모두 2배로 만들어서 출력하세요 -->
@@ -76,6 +90,12 @@
       for (let i of nums2) {
         console.log(i * 2);
       }
+      /*
+      const nums4 = nums2.map((num) => {
+        return num * 2;
+      });
+      console.log(nums4);
+      */
     </script>
 
     <!-- Q7. 배열에 있는 데이터들로 합계와 평균을 출력하세요 -->
@@ -87,6 +107,8 @@
       console.log(`합계 : ${total}`);
       const average = total / nums3.length;
       console.log(`평균 : ${average}`);
+
+      // sum3 = nums3.reduce((ac, num) => ac + num);
     </script>
 
     <!-- Q8. 두 배열의 각 데이터의 곱셈을 한 데이터들로 이루어진 새로운 배열을 생성하여 출력하세요 -->
@@ -98,6 +120,11 @@
         c1[i] = a1[i] * b1[i];
       }
       console.log(c1);
+      /*
+      for (const index in a1) {
+        c1.push(a1[index] * b1[index]);
+      }
+      */
     </script>
 
     <!-- Q9. 두 배열의 데이터 값이 서로 같은 데이터들만 이루어진 새로운 배열을 생성하여 출력하세요
@@ -116,6 +143,15 @@
         }
       }
       console.log(c2);
+
+      /*
+      a2.forEach((a) => {
+        // a값은 데이터, b2는 배열
+        if (b2.includes(a)) {
+          c2.push(a);
+        }
+      });
+      */
     </script>
 
     <!-- Q10. 2차원 배열에는 3명의 학생의 4과목 성적이 들어 있습니다. 각 학생들의 합계와 평균을 출력하세요 -->
@@ -135,6 +171,15 @@
         console.log(`${i + 1}번째 학생 평균 : ${average}`);
         total2 = 0;
         average = 0;
+      }
+
+      let total3 = 0;
+      for (i = 0; i < scores.length; i++) {
+        for (j = 0; j < scores[i].length; j++) {
+          total3 += scores[i][j];
+        }
+        console.log(total, total / scores[i].length);
+        total = 0;
       }
     </script>
   </body>
