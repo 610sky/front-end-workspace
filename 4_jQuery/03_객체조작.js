@@ -106,7 +106,7 @@ $(array).each((index, element) => {
 });
 
 $(array).each((index, element) => {
-  const a = <a href="${element.link}">${element.name}</a><br />;
+  // const a = <a href="${element.link}">${element.name}</a><br />;
   // append 방식
   //   $("#each-test").append(a);
 
